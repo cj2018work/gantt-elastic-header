@@ -37,6 +37,7 @@
       >
         {{ opts.locale.Now }}
       </button>
+      <slot name="option" :options="opts" :styles="style"></slot>
       <label
         class="gantt-elastic__header-label"
         :style="{ ...style['header-label'] }"
